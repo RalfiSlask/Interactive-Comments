@@ -5,5 +5,145 @@
 body {
   margin: 0 auto;
   padding: 0;
+  background: var(--very-light-gray, #F5F6FA);
+  font-family: 'Rubik';
+  color: var(--grayish-blue, #67727E);
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  width: 343px;
+  margin-top: 24px;
+}
+
+.container {
+  border-radius: 8px;
+  background: var(--white, #FFF);
+  padding: 16px;
+}
+
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.username {
+  color: var(--dark-blue, #334253);
+  font-weight: 500;
+}
+
+.container--footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.score--panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--very-light-gray, #F5F6FA);
+}
+
+.score--panel p {
+  margin: 0;
+}
+
+.add, .remove {
+  color: rgba(197, 198, 239, 1);
+}
+
+.score {
+  color: var(--moderate-blue, #5357B6);
+}
+
+/* Comments */
+
+.comment--container {
+  width: 343px;
+  min-height: 256px;
+}
+
+/* Replies */
+
+.replies--container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reply--container {
+ width: 325px;
+ min-height: 256px; 
+}
+
+.reply--panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+  height: 24px;
+}
+
+.reply--panel img {
+  width: 14px;
+  height: 12.25px;
+}
+
+/* Add comment container */
+
+.add--container {
+  width: 100%;
+  height: 189px;
+  margin-bottom: 50px;
+  padding: 16px 16px 13px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--light-gray, #E9EBF0);
+  background: var(--white, #FFF);
+  width: 100%;
+  height: 96px;
+  margin-bottom: 24px;
+}
+
+.user--avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.button--send {
+  border-radius: 8px;
+  background: var(--moderate-blue, #5357B6);
+  width: 104px;
+  height: 48px;
+  border: none;
+  color: var(--white, #FFF);
+  font-weight: 500;
+  font-family: Rubik;
+}
+
+.button--send:hover {
+  background: var(--light-grayish-blue, #C5C6EF);
+  cursor: pointer;
+}
